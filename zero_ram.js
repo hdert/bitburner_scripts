@@ -1,11 +1,11 @@
 import { scan_recursive } from "scan_recursive.js";
 
 /** @param {import(".").NS} ns */
-export function zero_ram(ns, scan_results, scriptRam) {
+export function zero_ram(ns, scan_results, script_ram = 1.6) {
   const zero_ram_hosts = [];
 
   for (let i in scan_results) {
-    if (ns.getServerMaxRam(scan_results[i]) < scriptRam) {
+    if (ns.getServerMaxRam(scan_results[i]) < script_ram) {
       zero_ram_hosts.push(scan_results[i]);
     }
   }
