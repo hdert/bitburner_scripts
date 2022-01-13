@@ -23,7 +23,7 @@ export async function main(ns) {
   ns.tprint("Purchasing " + serverPurchaseLimit + " Servers.");
   ns.tprint("Server ram: " + ram);
   ns.tprint(
-    "Indiviudal Server runs " +
+    "Individual Server runs " +
       threads +
       " of " +
       script +
